@@ -1,0 +1,146 @@
+/*
+Theme Name: Premios Verificado 2018
+Theme URI: http://pablocovarrubias.com
+Author: Pablo Covarrubias
+Author URI: http://pablocovarrubias.com
+Description: Verificado 2018 Premios
+Version: 1.0
+*/
+
+@charset 'utf-8';
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+/*HTML5 element display*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+/*Figures*/
+figure {margin: 0;}
+
+/* Utilities */
+.lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+* { box-sizing: border-box; }
+
+/* clearfix for modern browsers */
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+
+/*** FONT FACE ***/
+
+
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%;  } 
+body { font-size: 14px; font-size: 1.4rem; font-family: 'Poppins', sans-serif; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.first{ margin-left: 0; padding-left: 0;}
+.last{ margin-right: 0; padding-right: 0;}
+
+.left{ float: left;}
+.right{ float: right;}
+
+.hidden{display: none!important;}
+
+
+
+/*** GENERAL ***/
+
+.container {width: 100%;}
+.content {width: 100%; padding: 0 10px; margin: 0 auto; max-width: 1240px;}
+
+@media only screen and (max-width: 600px){
+	.content {padding: 0 10%;}
+}
+
+/*** VIDEO LANDING ***/
+
+#video_landing {max-width: 100%; position: relative; top: -20px;}
+#video_landing #landing_vid {position: absolute; top: 0px; z-index: -100;}
+#video_landing .play_pause {width: 60px; position: absolute; left: 2.5%; z-index: 1001;}
+#video_landing .play_pause img {width: 100%; height: auto; }
+#video_landing .play_pause:hover {cursor: pointer;}
+
+#video_landing .logo_white {width: 50%; text-align: center; margin: 50px auto 0 auto ;}
+#video_landing .logo_white img {}
+
+@media only screen and (max-width: 600px){
+	#video_landing {margin-top: 80px!important;}
+	#video_landing #landing_vid {position: relative; margin-top: 0px; z-index: -0!important;}
+	#video_landing .play_pause {display: none!important;}
+}
+
+/*** HEADER ***/
+
+header {width: 100%; position: fixed; top: 0px; padding: 20px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear;}
+header .logo {width: 180px; float: left; -webkit-transition: width .25s; transition: width .25s;}
+header .logo h1 {text-indent: -1000%; height: 0px; margin: 0px;}
+header .logo img {width: 100%; height: auto; }
+
+header.top {background-color: #000; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear;}
+header.top .logo {width: 140px; -webkit-transition: width .25s; transition: width .25s;}
+header.top .logo a path {fill: #fff;}
+
+header.top nav {display: block!important;}
+
+header nav {float: left; margin-left: 80px; display: none;}
+header nav ul {margin: 10px 0 0 0; padding: 0px;}
+header nav ul li {display: block; float: left; font-family: 'Roboto Mono', monospace; margin-right: 50px; font-size: 14px; letter-spacing: -1px; position: relative;}
+header nav ul li a {text-decoration: none; color: #fff; }
+header nav ul li:before {content: ""; position: absolute; width: 100%; height: 2px; bottom: -8px; left: 0; background: rgba(255, 0, 69, 1); visibility: visible; border-radius: 5px; transform: scaleX(0); transition: .15s linear;}
+
+header nav ul li:hover:before, header nav ul li:focus:before {visibility: visible; transform: scaleX(1);}
+
+@media only screen and (max-width: 600px){
+	header {width: 100%; position: fixed; top: 0px; padding: 10px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear;}	
+	header .logo {width: 50%; float: none; margin: 0 auto;}
+	header.top nav {display: none!important;}
+	header.top .logo {width: 30%; -webkit-transition: width .25s; transition: width .25s;}
+
+}
+
+
+/*** PRESENTACION ***/
+
+.content.about{width: 100%; max-width: 660px; margin: 0 auto; padding-top: 150px; }
+.content p {margin-bottom: 25px; font-size: 18px; line-height: 28px; color: #606060; font-weight: 400;}
+.content p strong {display: inline-block; font-weight: 700; font-size: 32px; color: #121212; text-transform: uppercase;}
+.content p a {color: rgba(255, 0, 69, 1); font-weight: 700; text-decoration: none;}
+
+@media only screen and (max-width: 600px){
+	.content.about {padding-top: 40px;}
+	.content p {font-size: 16px; line-height: 26px;}
+	.content p strong {font-size: 24px;}
+}
+
+/*** FOOTER ***/
+
+footer {background: #000; height: 40px; padding: 5px 0; font-family: 'Roboto Mono'!important; letter-spacing: -1px;}
+footer a {color: #606060; font-size: 12px; float: left; line-height: 28px; margin-right: 10px; text-decoration: none;}
+footer p {font-size: 12px!important; float: left; margin-bottom: 0px!important; color: #606060!important;}
