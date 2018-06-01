@@ -50,10 +50,10 @@
 					</div>
 					<nav>
 						<ul class="clearfix">
-							<li><a href="<?php echo site_url(); ?>/#presentacion">presentación</a></li>
-							<li><a href="">perfiles</a></li>
-							<li><a href="">innovación</a></li>
-							<li><a href="">impacto</a></li>
+							<li><a data="presentacion" href="#presentacion">presentación</a></li>
+							<li><a data="perfiles" href="#perfiles">perfiles</a></li>
+							<li><a data="innovacion" href="#innovacion">innovación</a></li>
+							<li><a data="impacto" href="#impacto">impacto</a></li>
 						</ul>
 					</nav>
 				</div>

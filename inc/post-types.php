@@ -7,19 +7,19 @@
 	add_action('init', function(){
 
 
-		// NOTICIAS
-		/*$labels = array(
-			'name'          => 'Noticias',
-			'singular_name' => 'Noticia',
-			'add_new'       => 'Nueva Noticia',
-			'add_new_item'  => 'Nueva Noticia',
-			'edit_item'     => 'Editar Noticia',
-			'new_item'      => 'Nueva Noticia',
-			'all_items'     => 'Todas',
-			'view_item'     => 'Ver Noticia',
-			'search_items'  => 'Buscar Noticia',
-			'not_found'     => 'No se encontro',
-			'menu_name'     => 'Noticias'
+		// PERFILES
+		$labels = array(
+			'name'          => 'Perfiles',
+			'singular_name' => 'Perfil',
+			'add_new'       => 'Nuevo Perfil',
+			'add_new_item'  => 'Nuevo Perfil',
+			'edit_item'     => 'Editar Perfil',
+			'new_item'      => 'Nuevo Perfil',
+			'all_items'     => 'Todos',
+			'view_item'     => 'Ver Perfil',
+			'search_items'  => 'Buscar Perfil',
+			'not_found'     => 'No se encontró',
+			'menu_name'     => 'Perfiles'
 		);
 
 		$args = array(
@@ -29,7 +29,7 @@
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'noticias' ),
+			'rewrite'            => array( 'slug' => 'perfiles' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
@@ -37,6 +37,6 @@
 			'taxonomies'         => array( 'category' ),
 			'supports'           => array( 'title', 'editor', 'thumbnail' )
 		);
-		register_post_type( 'noticia', $args );*/
+		register_post_type( 'perfil', $args );
 
 	});

@@ -74,6 +74,7 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 .container {width: 100%;}
 .content {width: 100%; padding: 0 10px; margin: 0 auto; max-width: 1240px;}
+.seccion {z-index: 100;}
 
 @media only screen and (max-width: 600px){
 	.content {padding: 0 10%;}
@@ -98,7 +99,7 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 /*** HEADER ***/
 
-header {width: 100%; position: fixed; top: 0px; padding: 20px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear;}
+header {width: 100%; position: fixed; top: 0px; padding: 20px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear; z-index: 1000;}
 header .logo {width: 180px; float: left; -webkit-transition: width .25s; transition: width .25s;}
 header .logo h1 {text-indent: -1000%; height: 0px; margin: 0px;}
 header .logo img {width: 100%; height: auto; }
@@ -128,16 +129,55 @@ header nav ul li:hover:before, header nav ul li:focus:before {visibility: visibl
 
 /*** PRESENTACION ***/
 
-.content.about{width: 100%; max-width: 660px; margin: 0 auto; padding-top: 150px; }
+.content.seccion{width: 100%; max-width: 660px; margin: 0 auto; padding-top: 150px; margin-bottom: 100px; }
 .content p {margin-bottom: 25px; font-size: 18px; line-height: 28px; color: #606060; font-weight: 400;}
 .content p strong {display: inline-block; font-weight: 700; font-size: 32px; color: #121212; text-transform: uppercase;}
 .content p a {color: rgba(255, 0, 69, 1); font-weight: 700; text-decoration: none;}
 
 @media only screen and (max-width: 600px){
-	.content.about {padding-top: 40px;}
+	.content.seccion {padding-top: 40px;}
 	.content p {font-size: 16px; line-height: 26px;}
 	.content p strong {font-size: 24px;}
 }
+
+/*** PERFILES ***/
+
+.divider_one {height: 250px; text-align: center; padding-top: 100px; background-size: cover; background-image: url('images/newsroom.png'); background-attachment: fixed; background-color: rgba(255, 0, 69, 1); background-position: center; }
+.divider_one h2{font-size: 40px; margin: 0px; color: #fff; font-family: 'Poppins';  }
+
+.perfiles {padding-top: 50px!important;}
+.perfil { margin: 0 auto 50px auto; float: left;}
+.perfil_logo {float: left; width: 30%; margin: 0 20px 20px 0}
+.perfil_logo img {width: 100%; height: auto;}
+.perfil_content {} 
+
+@media only screen and (max-width: 600px){
+	.divider_one {height: 150px; padding-top: 50px;  }
+	.perfil_logo {float: left; width: 100%; margin: 0 20px 20px 0}
+}
+
+/*** INNOVACION ***/
+
+.divider_two {height: 250px; text-align: center; padding-top: 100px; background-size: cover; background-image: url('images/innovacion.png'); background-attachment: fixed; background-color: rgba(255, 0, 69, 1); background-position: center; }
+.divider_two h2{font-size: 40px; margin: 0px; color: #fff; font-family: 'Poppins';  }
+
+.innovacion {padding-top: 50px!important;}
+
+@media only screen and (max-width: 600px){
+	.divider_two {height: 150px; padding-top: 50px;  }
+}
+
+/*** IMPACTO ***/
+
+.divider_three {height: 250px; text-align: center; padding-top: 100px; background-size: cover; background-image: url('images/data.png'); background-attachment: fixed; background-color: rgba(255, 0, 69, 1); background-position: center; }
+.divider_three h2{font-size: 40px; margin: 0px; color: #fff; font-family: 'Poppins';  }
+
+.impacto {padding-top: 50px!important;}
+
+@media only screen and (max-width: 600px){
+	.divider_three {height: 150px; padding-top: 50px;  }
+}
+
 
 /*** FOOTER ***/
 

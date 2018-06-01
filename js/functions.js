@@ -64,7 +64,7 @@
 			$('#pause').hide();
 			$('#play').show();
 			$('html, body').animate({
-		        scrollTop: $("#about").offset().top
+		        scrollTop: $("#presentacion").offset().top
 		    }, 1000);
 		});
 
@@ -77,7 +77,7 @@
 
 		/*** ABOUT ***/ 
 
-		$('#about').css('min-height', ventana+'px');
+		$('#presentacion').css('min-height', ventana+'px');
 
 		/*** HEADER ***/
 
@@ -101,7 +101,16 @@
 			});
 		}
 
+		$('nav ul li a').on('click', function(e){
+		
+			var seccion = $(this).attr('data');
+			$('html, body').animate({
+		        scrollTop: $("#"+seccion).offset().top
+		    }, 1000);
+		});
 
+
+		
 
 		// $(window).on('scroll', function () {
 		//     if ($(window).scrollTop() >= $(window).height())
