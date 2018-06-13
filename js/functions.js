@@ -38,7 +38,7 @@
 		var heightVid = $('#landing_vid').height();
 
 		if ($(window).width() > 601){
-			$('.play_pause').css('top', ventana-60+'px');
+			$('.play_pause #pause').css('top', ventana-60+'px');
 			$('#video_landing').css('min-height', ventana+'px');
 			$("#landing_vid").hover(function() {
 				$(this).prop("controls", true);

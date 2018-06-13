@@ -84,9 +84,10 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 #video_landing {max-width: 100%; position: relative; top: -20px;}
 #video_landing #landing_vid {position: absolute; top: 0px; z-index: -100;}
-#video_landing .play_pause {width: 60px; position: absolute; left: 2.5%; z-index: 1001;}
+#video_landing .play_pause {width: 100%; position: absolute;  z-index: 1001; top: 0;}
 #video_landing .play_pause img {width: 100%; height: auto; }
 #video_landing .play_pause:hover {cursor: pointer;}
+#video_landing .play_pause #pause {width: 60px; position: absolute; left: 2.5%;}
 
 #video_landing .logo_white {width: 50%; text-align: center; margin: 50px auto 0 auto ;}
 #video_landing .logo_white img {}
@@ -99,7 +100,7 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 /*** HEADER ***/
 
-header {width: 100%; position: fixed; top: 0px; padding: 20px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear; z-index: 1000;}
+header {width: 100%; position: fixed; top: 0px; padding: 20px 0; background-color: transparent; -webkit-transition: background-color .25s linear; -ms-transition: background-color .25s linear; transition: background-color .25s linear; z-index: 1002;}
 header .logo {width: 180px; float: left; -webkit-transition: width .25s; transition: width .25s;}
 header .logo h1 {text-indent: -1000%; height: 0px; margin: 0px;}
 header .logo img {width: 100%; height: auto; }
@@ -133,6 +134,9 @@ header nav ul li:hover:before, header nav ul li:focus:before {visibility: visibl
 .content p {margin-bottom: 25px; font-size: 18px; line-height: 28px; color: #606060; font-weight: 400;}
 .content p strong {display: inline-block; font-weight: 700; font-size: 32px; color: #121212; text-transform: uppercase;}
 .content p a {color: rgba(255, 0, 69, 1); font-weight: 700; text-decoration: none;}
+.content ul {margin: 0px; padding: 0px; width: 100%;}
+.content ul li {margin-bottom: 10px; font-size: 18px; line-height: 28px; }
+
 
 @media only screen and (max-width: 600px){
 	.content.seccion {padding-top: 40px;}

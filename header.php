@@ -21,10 +21,11 @@
 			<?php if(is_home()){ ?>
 			<div id="video_landing" class="">
 				<video width="100%" id="landing_vid" controlsList="nodownload">
-				  <source src="<?php echo THEMEPATH; ?>images/landing.mp4" type="video/mp4">
+				  <source src="http://pablocovarrubias.com/landing.mp4" type="video/mp4">
 				</video>
 				<div class="play_pause">
-					<img id="play" src="<?php echo THEMEPATH; ?>images/play.svg">
+					<img id="play" src="<?php echo THEMEPATH; ?>/images/thumb_video.png">
+					<!--<img id="play" src="<?php echo THEMEPATH; ?>images/play.svg">-->
 					<img id="pause" src="<?php echo THEMEPATH; ?>images/pause.svg">
 
 				</div>
