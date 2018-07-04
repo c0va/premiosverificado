@@ -20,7 +20,7 @@
 		<div class="container">
 			<?php if(is_home()){ ?>
 			<div id="video_landing" class="">
-				<video width="100%" id="landing_vid" controlsList="nodownload">
+				<video width="100%" id="landing_vid" controlsList="nodownload" autoplay>
 				  <source src="http://pablocovarrubias.com/landing.mp4" type="video/mp4">
 				</video>
 				<div class="play_pause">
