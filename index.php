@@ -11,7 +11,7 @@
 	</div>
 
 	<div id="perfiles" class="divider_one">
-		<h2><?php if(qtrans_getLanguage('es')){ ?>PERFILES<?php } else { ?>PROFILES<?php } ?></h2>
+		<h2><?php if (qtranxf_getLanguage() == 'es'){ ?>PERFILES<?php } else { ?>PROFILES<?php } ?></h2>
 	</div>
 
 	<div class="container clearfix">
@@ -42,7 +42,7 @@
 	</div>
 
 	<div id="innovacion" class="divider_two">
-		<h2><?php if(qtrans_getLanguage('es')){ ?>INNOVACIÓN<?php } else { ?>INNOVATION<?php } ?></h2>
+		<h2><?php if (qtranxf_getLanguage() == 'es'){ ?>INNOVACIÓN<?php } else { ?>INNOVATION<?php } ?></h2>
 	</div>
 
 	<div class="container clearfix">
@@ -56,7 +56,7 @@
 	</div>
 
 	<div id="impacto" class="divider_three">
-		<h2><?php if(qtrans_getLanguage('es')){ ?>IMPACTO<?php } else { ?>IMPACT<?php } ?></h2>
+		<h2><?php if (qtranxf_getLanguage() == 'es'){ ?>IMPACTO<?php } else { ?>IMPACT<?php } ?></h2>
 	</div>
 
 	<div class="container clearfix">

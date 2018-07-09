@@ -47,7 +47,7 @@
 			});
 		}
 
-		$('#pause').hide();
+		//$('#pause').hide();
 		$('#play').hide();
 		$('#play').on('click', function(){
 			$('#landing_vid').get(0).play();

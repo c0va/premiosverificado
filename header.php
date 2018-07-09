@@ -24,7 +24,7 @@
 				  <source src="http://pablocovarrubias.com/landing.mp4" type="video/mp4">
 				</video>
 				<div class="play_pause">
-					<img id="play" src="<?php echo THEMEPATH; ?>/images/thumb_video.png">
+					<!--<img id="play" src="<?php echo THEMEPATH; ?>/images/thumb_video.png">-->
 					<!--<img id="play" src="<?php echo THEMEPATH; ?>images/play.svg">-->
 					<img id="pause" src="<?php echo THEMEPATH; ?>images/pause.svg">
 
@@ -51,10 +51,17 @@
 					</div>
 					<nav>
 						<ul class="clearfix">
+							<?php if (qtranxf_getLanguage() == 'es'){ ?>
 							<li><a data="presentacion" href="#presentacion">presentación</a></li>
 							<li><a data="perfiles" href="#perfiles">perfiles</a></li>
 							<li><a data="innovacion" href="#innovacion">innovación</a></li>
 							<li><a data="impacto" href="#impacto">impacto</a></li>
+							<?php } else { ?>
+							<li><a data="presentacion" href="#presentacion">presentation</a></li>
+							<li><a data="perfiles" href="#perfiles">profiles</a></li>
+							<li><a data="innovacion" href="#innovacion">innovation</a></li>
+							<li><a data="impacto" href="#impacto">impact</a></li>
+							<?php } ?> 
 						</ul>
 					</nav>
 				</div>
