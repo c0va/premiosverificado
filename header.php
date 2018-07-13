@@ -1,7 +1,7 @@
 <!doctype html>
 	<head>
 		<meta charset="utf-8">
-		<title><?php print_title(); ?></title>
+		<title>Presentación Verificado 2018</title>
 		<link rel="shortcut icon" href="<?php echo THEMEPATH; ?>images/favicon.ico">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,11 +20,11 @@
 		<div class="container">
 			<?php if(is_home()){ ?>
 			<div id="video_landing" class="">
-				<video width="100%" id="landing_vid" controlsList="nodownload" autoplay>
+				<video width="100%" id="landing_vid" controlsList="nodownload">
 				  <source src="http://pablocovarrubias.com/landing.mp4" type="video/mp4">
 				</video>
 				<div class="play_pause">
-					<!--<img id="play" src="<?php echo THEMEPATH; ?>/images/thumb_video.png">-->
+					<img id="play" src="<?php echo THEMEPATH; ?>/images/thumb_video.png">
 					<!--<img id="play" src="<?php echo THEMEPATH; ?>images/play.svg">-->
 					<img id="pause" src="<?php echo THEMEPATH; ?>images/pause.svg">
 
@@ -64,6 +64,10 @@
 							<?php } ?> 
 						</ul>
 					</nav>
+					<div class="lang_switcher">
+						<li><a href="<?php echo site_url(); ?>/?lang=es">es</a></li>
+						<li><a href="<?php echo site_url(); ?>/?lang=en">en</a></li>
+					</div>
 				</div>
 			</header>
 		</div>
